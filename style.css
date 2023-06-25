@@ -1,0 +1,123 @@
+*{
+    box-sizing: border-box;
+    font-family: "Archivo Narrow", sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+html body{
+    margin : 0;
+    padding : 0;
+    font-size: 1.8rem;
+    letter-spacing: 0.05rem;
+}
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+h1{
+    font-size: 4.5rem;
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin-block: 2rem;
+    z-index: 3;
+
+}
+p{
+    line-height: 2.7rem
+}
+.logo{
+    font-weight: 700;
+    font-size: 4rem;
+}
+ul{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+li{
+    list-style: none;
+}
+header a{
+    color: white;
+    text-decoration: none;
+}
+ a:hover{
+    text-decoration: underline;
+}
+main{
+    width: 88%;
+    margin: 0 auto;
+}
+.banner{
+    background-color: red;
+    padding: 10rem 10rem;
+    padding-top: 23rem;
+    background-image: url(./banner.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(15px);
+    z-index: -1;
+    background-blend-mode:lighten(10%);
+    color: white;
+}
+.banner-container{
+    display:flex;
+    width: 60%;
+    flex-direction: column;
+}
+.acceuil-container{
+    display:flex;
+    justify-content: space-between;
+
+}
+.acceuil-content{
+    width: 47%;
+    margin-top: 10rem;
+}
+.acceuil-content ul{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.acceuil-content ul li{
+    list-style: inside;
+}
+
+.acceuil-content::before{
+    content: "";
+    display:block;
+    width: 5%;
+    height: 5px;
+    background-color: #000;
+    margin-block: 10px;
+}
+.acceuil-content::before{
+    content: " ";
+    display:block;
+    width: 5%;
+    height: 5px;
+    background-color: #000;
+    margin-block: 10px;
+}
+button {
+    background-color: #00C2FF;
+    color: white;
+    border: none;
+    padding: 0.7rem 1.4rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.8rem; /* Ajout de la taille de police */
+}
+.banner-container a{
+    color: #00C2FF;
+    text-decoration: underline;
+
+}
