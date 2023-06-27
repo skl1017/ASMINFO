@@ -13,6 +13,9 @@ html body{
     background-color: #F7F7F7
     ;
 }
+figure{
+    margin: 0;
+}
 h1, h2, h3, h4, h5, h6{
     margin: 0;
 }
@@ -24,6 +27,12 @@ h2{
 }
 h3{
     font-size: 3.6rem;
+}
+h4{
+    font-size: 2.3rem;
+}
+.big{
+    font-size: 3rem;
 }
 header{
     width: 100%;
@@ -62,7 +71,7 @@ header a{
  a:hover{
     text-decoration: underline;
 }
-main{
+section{
     width: 88%;
     margin: 0 auto;
 }
@@ -274,8 +283,103 @@ footer p{
 }
 
 
-
-
 .services-intro-container{
     margin-top: 5rem;
+    margin-bottom: 8rem;
+}
+.reparations-cards-container{
+    width: 94%;
+    margin: 0 auto;
+}
+.reparations-cards-container ul, .services-cards-container ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    flex-wrap: wrap;
+    row-gap: 4rem;
+    margin-block: 4rem;
+}
+.reparations-cards-container ul li, .services-cards-container li{
+    width: 27%;
+    
+}
+.reparations-card, .services-card{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow: 3px 4px 6px 0px #00000026;
+    background-color: white;
+
+}
+.reparations-card p{
+    margin-block: 1rem;
+}
+.reparations-card-content{
+    width:80%;
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+    margin-block: 1.6rem;
+ 
+}
+.reparations-card figure{
+    width: 100%;
+    height: 12rem;
+}
+.reparations-card figure img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+}
+
+
+.composants-banner{
+    display: flex;
+    width: 100%;
+    background-color: #00C2FF;
+    color: white;
+    gap: 4rem;
+    margin-block: 4rem;
+}
+.composants-banner-titre{
+    width: 35%;
+    background-image: url(./services.webp);
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+.composants-banner-content{
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+}
+.services-card h4{
+    text-align: center;
+}
+.services-cards-container{
+    margin-block: 5rem;
+}
+.services-card{
+    padding: 3rem;
+}
+.nous-contacter{
+    display:flex;
+    align-items: center;
+    width: 80%;
+    margin: 5rem auto;
+    justify-content: space-between;
+}
+.nous-contacter-container{
+    margin-block: 5rem;
+}
+.contact-map{
+    width: 63%;
+    height: 40rem;
+}
+.nous-contacter .contact-container{
+    width: 35%;
 }
