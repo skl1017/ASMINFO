@@ -1,5 +1,5 @@
 window.onload=(event) =>{
-    const header = document.querySelector()
+    const header = document.querySelector('header')
 
 
 

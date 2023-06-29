@@ -300,16 +300,17 @@ footer p{
     list-style: inside;
 }
 .reparations-cards-container{
-    width: 94%;
+    width: 92%;
     margin: 0 auto;
 }
 .reparations-cards-container ul, .services-cards-container ul{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: 0;
     flex-wrap: wrap;
     row-gap: 4rem;
     margin-block: 4rem;
+    margin-left: 3rem;
 }
 .reparations-cards-container ul li, .services-cards-container li{
     width: 27%;
@@ -407,23 +408,7 @@ footer p{
 .nous-contacter .contact-container{
     width: 35%;
 }
-#caisse{
-    width: 100%;
-}
-#caisse .reparations-card{
-    flex-direction: row;
-    justify-content: space-around;
-}
-#caisse .reparations-card-content{
-    width: 60%;
-}
-#caisse figure{
-    height: auto;
-    width: 30%;
-}
-#caisse ul{
-    display: block;
-}
-#caisse li{
-    list-style: inside;
+.reparations-cards-container h3{
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
