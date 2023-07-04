@@ -249,8 +249,30 @@ footer p{
     align-items: center;
     font-size: 2.4rem;
 }
+.show{
+    display: flex !important;
+}
+.mobile-bar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    z-index: 2;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(20px);
+    background-color: #0000006b;
 
-
+}
+.mobile-bar ul{
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+   
+}
 
 
 
@@ -414,12 +436,13 @@ footer p{
     margin-bottom: 2rem;
 }
 
-.mobile-bar{
+.mobile-button{
     display: none;
+    z-index: 3;
 }
 
 @media only screen and (max-width: 993px){
-    .mobile-bar{
+    .mobile-button{
         display: block;
     }
     header nav{
