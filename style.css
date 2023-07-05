@@ -57,7 +57,6 @@ p{
 }
 .logo{
     font-weight: 700;
-    font-size: 4rem;
 }
 header ul{
     display: flex;
@@ -190,7 +189,7 @@ footer p{
     height: 3rem;
     background-color: #00C2FF;
 }
-.histoire-banner, .services-banner{
+.histoire-banner, .services-banner, .contact-banner{
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -202,6 +201,7 @@ footer p{
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 .histoire-banner{
     background-image: url(./histoire.webp);
@@ -211,7 +211,9 @@ footer p{
 .services-banner{
     background-image: url(./services.webp);
     background-position: 0% 50%;
-
+}
+.contact-banner{
+    background-image: url(./banner.png);
 }
 .histoire-container{
     margin-top: 5rem;
@@ -263,6 +265,7 @@ footer p{
     display: none;
     justify-content: center;
     align-items: center;
+    -webkit-backdrop-filter: blur(20px);
     backdrop-filter: blur(20px);
     background-color: #0000006b;
 
@@ -273,7 +276,9 @@ footer p{
     flex-direction: column;
    
 }
-
+#logo{
+    width: 100px;
+}
 
 
 
@@ -439,9 +444,14 @@ footer p{
 .mobile-button{
     display: none;
     z-index: 3;
+    background-color: transparent;
 }
 
+
 @media only screen and (max-width: 993px){
+    .histoire-banner, .services-container, .contact-banner{
+        margin-top: 125px;
+    }
     .mobile-button{
         display: block;
     }
@@ -456,11 +466,11 @@ footer p{
         position: fixed;
         top: 0;
         left: 0;
-        padding-block: 1rem;
         z-index: 3;
         transition: all 0.1s ease-out;
-        padding-block: 3rem;
+        padding-block: 1rem;
         padding-inline: 5rem;
+       
     }
     .acceuil-container{
         flex-direction: column;
@@ -528,5 +538,11 @@ footer p{
     }
     .composants-banner-content{
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 384px){
+    header{
+        padding-inline: 2rem;
     }
 }
