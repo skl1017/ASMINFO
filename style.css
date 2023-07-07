@@ -88,6 +88,7 @@ section{
     z-index: -1;
     background-blend-mode:lighten(10%);
     color: white;
+    padding-bottom: 4rem;
 }
 .banner-container{
     display:flex;
@@ -101,7 +102,7 @@ section{
 }
 .acceuil-content{
     width: 47%;
-    margin-top: 10rem;
+    margin-top: 4rem;
 }
 .acceuil-content ul{
     display: flex;
@@ -197,7 +198,7 @@ footer p{
     z-index: -1;
     color: white;
     padding: 10rem 10rem;
-    margin-top: 100px;
+    margin-top: 125px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,7 +231,7 @@ footer p{
     content:'';
     width: 0.4rem;
     height: 100%;
-    grid-row: 1 / 5;
+    grid-row: 1 / 13;
     background-color: #00C2FF;
     grid-column: 2/3;
 }
@@ -313,11 +314,32 @@ footer p{
 .histoire-container ul li:nth-child(5){
     grid-row: 5 / 6;
 }
+.histoire-container ul li:nth-child(6){
+    grid-row: 6 / 7;
+}
+.histoire-container ul li:nth-child(7){
+    grid-row: 7 / 8;
+}
+.histoire-container ul li:nth-child(8){
+    grid-row: 8 / 9;
+}
+.histoire-container ul li:nth-child(9){
+    grid-row: 9 / 10;
+}
+.histoire-container ul li:nth-child(10){
+    grid-row: 10 / 11;
+}
+.histoire-container ul li:nth-child(11){
+    grid-row: 11 / 12;
+}
+.histoire-container ul li:nth-child(12){
+    grid-row: 12 / 13;
+}
 
 
 .services-intro-container{
-    margin-top: 5rem;
-    margin-bottom: 8rem;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
 }
 .services-intro-container ul{
     display:flex;
@@ -333,12 +355,12 @@ footer p{
 }
 .reparations-cards-container ul, .services-cards-container ul{
     display: flex;
-    justify-content: space-between;
     padding: 0;
     flex-wrap: wrap;
     row-gap: 4rem;
     margin-block: 4rem;
     margin-left: 3rem;
+    column-gap: 5%;
 }
 .reparations-cards-container ul li, .services-cards-container li{
     width: 27%;
@@ -498,7 +520,12 @@ footer p{
     .contact-map{
         width: 100%;
     }
-   
+   .reparations-cards-container{
+    width: 100%;
+   }
+   .reparations-cards-container li{
+    width: 40% !important;
+   }
 }
 
 @media only screen and (max-width: 690px){
@@ -538,6 +565,15 @@ footer p{
     }
     .composants-banner-content{
         width: 100%;
+    }
+}
+
+@media only screen and (max-width: 532px){
+    .reparations-cards-container ul{
+        justify-content: center;
+    }
+    .reparations-cards-container li{
+        width: 80% !important
     }
 }
 
