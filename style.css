@@ -98,11 +98,12 @@ section{
 .acceuil-container{
     display:flex;
     justify-content: space-between;
+    width: 100%;
 
 }
 .acceuil-content{
-    width: 47%;
-    margin-top: 4rem;
+    width: 100%;
+    margin-top: 2rem;
 }
 .acceuil-content ul{
     display: flex;
@@ -163,12 +164,15 @@ footer{
     justify-content: left;
     margin: 0 auto;
     align-items: center;
-    gap: 3rem;
+    gap: 9rem;
     padding-block: 3rem;
 }
 .contact-container{
     display: flex;
     flex-direction: column-reverse;
+}
+footer .contact-container{
+    flex-direction: row-reverse;
 }
 footer p{
     margin-block: 1rem;
@@ -353,7 +357,7 @@ footer p{
     width: 92%;
     margin: 0 auto;
 }
-.reparations-cards-container ul, .services-cards-container ul{
+.reparations-cards-container ul, .reparations-cards-container ul{
     display: flex;
     padding: 0;
     flex-wrap: wrap;
@@ -432,9 +436,7 @@ footer p{
     flex-direction: column;
     padding: 2rem;
 }
-.services-card h4{
-    text-align: center;
-}
+
 .services-cards-container{
     margin-block: 5rem;
 }
@@ -480,6 +482,23 @@ footer a{
     width: 80%;
     margin-inline: auto;
     margin-bottom: 7rem;
+}
+.tarif ul{
+    padding: 0;
+}
+.tarif ul li{
+    list-style: inside;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.services-card-list{
+    display:flex;
+    width: 100%;
+    justify-content: space-around;
+    padding: 0;
+}
+.services-card-list li{
+    width: 23%;
 }
 
 @media only screen and (max-width: 993px){
@@ -538,6 +557,20 @@ footer a{
    .reparations-cards-container li{
     width: 40% !important;
    }
+    .footer-container{
+        gap: 4rem;
+        flex-direction: row;
+   }
+   footer .contact-container{
+        flex-direction: column-reverse;
+   }
+   .services-card-list{
+        flex-direction: column;
+        gap: 3rem;
+   }
+   .services-card-list li{
+    width: 90% !important;
+   }
 }
 
 @media only screen and (max-width: 690px){
@@ -586,6 +619,9 @@ footer a{
     }
     .reparations-cards-container li{
         width: 80% !important
+    }
+    .footer-container{
+        flex-direction: column;
     }
 }
 
