@@ -407,7 +407,7 @@ footer p{
 }
 .reparations-card figure img{
     width: 100%;
-    object-fit: cover;
+    object-fit: contain;
     height: 100%;
 }
 
